@@ -1,0 +1,74 @@
+{
+    "name": "Proofed-Test-Tracker",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "start": "node web-server.js"
+    },
+    "dependencies": {
+        "@auth0/auth0-spa-js": "^1.18.0",
+        "@fortawesome/fontawesome-svg-core": "^1.2.36",
+        "@fortawesome/free-solid-svg-icons": "^5.15.4",
+        "@fortawesome/vue-fontawesome": "^0.1.10",
+        "axios": "^0.24.0",
+        "core-js": "^2.6.12",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "helmet": "^4.6.0",
+        "highlight.js": "^10.7.3",
+        "moment": "^2.29.3",
+        "morgan": "^1.10.0",
+        "vue": "^2.6.14",
+        "vue-notification": "^1.3.20",
+        "vue-router": "^3.5.2",
+        "vue-select": "^3.16.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.3.0",
+        "@vue/cli-plugin-eslint": "^3.1.1",
+        "@vue/cli-service": "^4.5.15",
+        "@vue/eslint-config-prettier": "^3.0.5",
+        "babel-eslint": "^10.1.0",
+        "sass": "^1.45.0",
+        "sass-loader": "^7.3.1",
+        "vue-template-compiler": "^2.6.14"
+    },
+    "prettier": {
+        "singleQuote": false,
+        "semi": true
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true,
+            "browser": true
+        },
+        "plugins": [
+            "vue"
+        ],
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "rules": {
+            "no-console": [
+                "error",
+                {
+                    "allow": [
+                        "error",
+                        "warn"
+                    ]
+                }
+            ]
+        },
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "engines": {
+        "node": ">=10"
+    }
+}
