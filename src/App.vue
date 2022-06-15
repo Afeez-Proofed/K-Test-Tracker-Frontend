@@ -34,7 +34,7 @@ body
   color: #001E62
 
 .primary-text-color
-  color: rgba(0, 30, 98, 1)
+  color:#B4F6D0
 
 
 #app
@@ -131,7 +131,8 @@ body
     font-weight: 400
     font-size: 24px
     line-height: 29px
-
+.proofed-logo a:hover
+  color: #B4F6D0
 .card-header-text
   color: #001E62
   font-size: 1.3em

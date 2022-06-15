@@ -1,8 +1,8 @@
 <template>
   <div>
       <div class="greeting-card">
-          <!-- <img :src="'k_logo_home.jpg'"/> -->
-          <h3>Knowadays 👋 </h3>
+          <img :src="'/Logo.png'"/>
+          <!-- <h3>Knowadays 👋 </h3> -->
           <p>{{Message}}</p>
           <div class="login-greeting secondary-button" v-on:click="login">Login</div>
       </div>
@@ -44,6 +44,7 @@ export default {
 
 .greeting-card img
   margin-bottom:15px
+  width:50px
 .login-greeting
     cursor: pointer
 </style>

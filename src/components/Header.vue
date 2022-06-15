@@ -52,7 +52,7 @@ export default {
 .header
     margin: 0
     padding: 24px
-    background-color: #e4e9f5
+    background-color: #204D51
     align-items: center
     z-index: 100
     display: flex
@@ -68,8 +68,8 @@ export default {
 
 .nav-bar-link
   transition: 0.1s ease
-
 .nav-bar-link:hover
+  color: green
   padding: 8px
   background: #ced7eb
   border-radius: 10px

@@ -20,6 +20,7 @@
         />
       </div> -->
       <div class="flex-spacer"></div>
+      <input type="search" id="search" placeholder="Search by email" />
       <div class="page_container" style="margin-right: 32px">
         <span style="color: #6174a0">Page</span>
         <div v-for="page in PaginationOptions.total_pages" :key="page">
@@ -51,12 +52,16 @@
 
       <!-- desktop -->
       <table class="test-list-table">
-        <thead class="test-list-header" v-show="Tests.length > 0">
+        <!-- v-show="Tests.length > 0" -->
+        <thead class="test-list-header" >
           <td></td>
           <td>Test ID</td>
+          <td>Test Name</td>
           <td>Test Attempt</td>
           <td>{{ testColumnTwo }}</td>
-          <td>Email</td>
+          <td>Learner Name</td>
+          <td>Learner Email</td>
+          <!-- <td>Learner Name & Email</td> -->
           <td>{{ testColumnFour }}</td>
           <td>{{ testColumnFive }}</td>
           <td></td>
@@ -187,7 +192,7 @@ export default {
       return this.Marked ? "Date Marked" : "Date Submitted";
     },
     testColumnFour() {
-      return "Assigned To";
+      return "Tutor";
     },
     testColumnFive() {
       return this.Marked ? "Score" : "Status";
@@ -344,6 +349,12 @@ export default {
 .page_button
   cursor: pointer
 
+#search
+  border-radius: 15px
+  padding: 1px 10px
+  outline-offset: 0
+#search:hover
+  outline-offset: 0
 .page_container
   display: flex
   align-items: center
