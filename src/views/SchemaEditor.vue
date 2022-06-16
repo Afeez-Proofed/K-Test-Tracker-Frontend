@@ -47,8 +47,33 @@
           :fieldData="`${Schema.fail_rate * 100}%`"
         />
       </div>
-
       <div class="test-question-list schema-container-item">
+        <div class="text-align"><h4>Course Name:</h4>&ensp;<span>Becoming Proofreader</span></div>
+        <div class="text-align"><h4>Test Type: </h4>&ensp;<span>Bap-01</span></div>
+      <table class="proof_table">
+        <!-- v-show="Tests.length > 0" -->
+        <thead class="proof_table_heading" >
+          <td>Mark ID</td>
+          <td>Error Summary</td>
+          <td>Error Description/ Internal</td>
+          <td>Error Screenshot</td>
+          <td>Error Category</td>
+          <td>Learner-Facing Content</td>
+          <td>Associated Module</td>
+          <td>Associated Lesson</td>
+          <td>Associated Sub-section of Lesson</td>
+          <td>Associated Slide/Heading</td>
+        </thead>
+        <tr></tr>
+        <div></div>
+
+        
+      </table>
+
+      <div class="table_btns" >
+        <button type="button">Save Test</button>
+        <button type="button">Mark Test</button>
+      </div>
         <p class="subline" v-show="editQuestionState.showForm">Editing</p>
         <p>
           <span
@@ -448,7 +473,39 @@ export default {
     padding: 64px
     margin: 64px auto
 
+.proof_table_heading > td
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  padding: 10px
+  border-collapse: collapse
+.proof_table
+  width: 100%
 
+.text-align
+  display: flex
+  align-items: baseline
+.text-align > span
+  font-size: x-large
+
+.table_btns button
+  min-width: 30%
+  line-height: 30px
+  font-size: 14px
+  height: 50px
+  color: white
+  background: rgba(0, 179, 115, 1)
+  border-radius: 22px
+  text-align: center
+  transition: 0.5s
+  border: none
+
+.table_btns button:hover
+  text-decoration: none
+  color: white
+  background: #008F5C
+.table_btns
+  display: flex
+  justify-content: space-between
+  margin: 30px 0px
 .schema-container
   display: grid
   grid-template-columns: 1fr 2fr
